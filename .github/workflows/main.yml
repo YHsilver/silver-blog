@@ -26,9 +26,10 @@ jobs:
     - name: Setup Hexo Dependencies
       run: |
         npm install hexo-cli -g
+        npm install hexo-deployer-git --save #git deploy tool
+        npm install hexo-renderer-pug hexo-renderer-stylus --save #theme renderer plugin
         npm install
-        npm install hexo-deployer-git --save
-    
+        
     - name: Setup Deploy Private Key
       env:
         HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
