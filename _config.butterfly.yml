@@ -153,7 +153,7 @@ post_meta:
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -857,8 +857,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    - <script data-pace-options='{ "ajax":true, "document":true, "eventLag":true  }' src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CodeByZach/pace@1.2.4/themes/blue/pace-theme-minimal.css">
    
   bottom:
     # - <script src="xxxx"></script>
