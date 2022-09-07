@@ -1,45 +1,43 @@
 ---
 title: Hello World
-categories:
-- Sports
-- Baseball
 tags:
-- Injury
-- Fight
-- Shocking
+- 随笔
+cover: https://pic.imgdb.cn/item/6318b29116f2c2beb15628f3.png
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+ 终于又要捡起我的博客网站了，之前的博客写了一个多月就暂停没维护了，一方面是因为本身知识储备不够，还不足以写出一个高质量的程序员技术博客，二是操作起来有点麻烦，写作工具不够丰富，创业未半而中道崩殂也实属意料之中。这次重新拾起旧业，不仅丰富了写作内容，而且搭建了一套完整易用的工作流，应该能让这个网站存活得久一点...
 
-## Quick Start
+# 写些什么呢
 
-### Create a new post
+### 技术文章
 
-``` bash
-$ hexo new "My New Post"
-```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### 生活感悟
 
-``` bash
-$ hexo server
-```
 
-More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### 读书笔记
 
-``` bash
-$ hexo generate
-```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+### 旅游小记
 
-``` bash
-$ hexo deploy
-```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+# 我的工作流是怎么搭建的
+
+### 博客工具选择
+
+
+
+### 工作流
+
+#### Typora+图床 撰写文章内容
+
+
+
+#### Hexo + GitHub Action 为博客添加样式
+
+
+
+#### GitHub Pages 部署博客
