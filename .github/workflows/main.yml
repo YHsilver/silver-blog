@@ -10,7 +10,7 @@ on:
 jobs:
   build: 
     runs-on: ubuntu-latest 
-        
+    if: "! contains(github.event.head_commit.message, 'wip')" #do not trigger action when commit message contains 'wip'
     steps:
     # check it to your workflow can access it
     # from: https://github.com/actions/checkout
