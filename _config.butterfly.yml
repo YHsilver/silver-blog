@@ -590,7 +590,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: # '\f0c1'
   title-prefix-icon-color: # '#F47466'
@@ -617,7 +617,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Effect Speed Options (打字效果速度參數)
@@ -632,9 +632,13 @@ subtitle:
   # source: 2  調用一句網（簡體） http://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
+  source: 3
   sub:
+    - Row row row your boat 
+    - gently down the stream
+    - Merrily merrily merrily merrily
+    - life is but a dream
 
 # Loading Animation (加載動畫)
 preloader: false
