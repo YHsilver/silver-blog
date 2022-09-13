@@ -6,4 +6,10 @@ top_img: https://pic.imgdb.cn/item/631a193616f2c2beb1b53487.jpg
 
 <div class="gallery-group-main">
 {% galleryGroup '西藏' '关于西藏的毕业旅行' '/Gallery/Xizang' https://pic.imgdb.cn/item/631a1a5b16f2c2beb1b69046.jpg %}
+{% galleryGroup '东极岛' '祖国的最东方' '/Gallery/Dongjidao' https://pic.imgdb.cn/item/63208ab716f2c2beb1cd116b.jpg %}
 </div>
+
+<div class="gallery-group-main">
+{% galleryGroup '东极岛' '祖国的最东方' '/Gallery/Dongjidao' https://pic.imgdb.cn/item/63208ab716f2c2beb1cd116b.jpg %}
+</div>
+
