@@ -51,8 +51,26 @@ date: 2022-09-09 00:37:41
 ---
 
 # 雪山
-wip
+
 {% gallery %}
+
+![_DSC1407](https://pic1.imgdb.cn/item/6350093916f2c2beb1dfa7b6.jpg)
+
+![_DSC1407](https://pic1.imgdb.cn/item/6350091f16f2c2beb1df7a43.jpg)
+
+![_DSC1412](https://pic1.imgdb.cn/item/6350093316f2c2beb1df9d26.jpg)
+
+![BWHU8629](https://pic1.imgdb.cn/item/6350094216f2c2beb1dfb93b.png)
+
+![DSC01741](https://pic1.imgdb.cn/item/6350094c16f2c2beb1dfcbda.png)
+
+
+
+![DSC01684](https://pic1.imgdb.cn/item/6350095416f2c2beb1dfd94c.jpg)
+
+![DSC01711](https://pic1.imgdb.cn/item/6350098516f2c2beb1e0364a.png)
+
+![_DSC1609](https://pic1.imgdb.cn/item/6350096316f2c2beb1dff58b.png)
 
 {% endgallery %}
 
@@ -61,16 +79,18 @@ wip
 ---
 
 # 湖泊
-wip
+
 {% gallery %}
+
+![DSC01748](https://pic1.imgdb.cn/item/6350097616f2c2beb1e01acf.png)
+
+![_DSC1494](https://pic1.imgdb.cn/item/635009dc16f2c2beb1e0e419.jpg)![_DSC1495](https://pic1.imgdb.cn/item/635009a316f2c2beb1e07211.png)![_DSC1497](C:\Users\YHsil\Pictures\Blog\composed\xz\_DSC1497.JPG)![_DSC1514](https://pic1.imgdb.cn/item/635009ac16f2c2beb1e0832a.png)![_DSC1509](https://pic1.imgdb.cn/item/635009cc16f2c2beb1e0c43a.png)![_DSC1528](https://pic1.imgdb.cn/item/635009dc16f2c2beb1e0e416.jpg)![DSC0E1759](https://pic1.imgdb.cn/item/635009f016f2c2beb1e10f85.jpg)![DSC01752](https://pic1.imgdb.cn/item/635009dc16f2c2beb1e0e422.png)
+
+![_DSC1413](https://pic1.imgdb.cn/item/635009ac16f2c2beb1e08336.jpg)
+
+
 
 {% endgallery %}
 
 ---
 
-# 牦牛
-
-wip
-{% gallery %}
-
-{% endgallery %}

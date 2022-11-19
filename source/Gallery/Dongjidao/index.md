@@ -1,6 +1,7 @@
 ---
 title: 东极岛
 date: 2022-09-13 21:47:35
+top_img: https://pic.imgdb.cn/item/63208ad816f2c2beb1cd3dcb.jpg
 ---
 
 {% gallery %}
