@@ -1,11 +1,12 @@
 ---
 title: 事务（一）：本地事务
-date: 2022-10-19 22:30:54
 tags:
-- 数据库
-- MySQL
-- 事务
-cover: https://pic.imgdb.cn/item/6378dcc116f2c2beb17e3666.jpg 
+  - 数据库
+  - MySQL
+  - 事务
+cover: 'https://pic.imgdb.cn/item/6378dcc116f2c2beb17e3666.jpg'
+abbrlink: 42434
+date: 2022-11-19 22:30:54
 ---
 
 # 什么是事务
