@@ -98,7 +98,7 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 
 除了上面提到的问题外，以上两种协议（2PC和3PC）还有一个本质上最大的缺陷就是依赖于数据库实现的XA协议，实际上很多NoSQL数据库并没有实现XA协议，因此也不能直接使用2PC和3PC来完成分布式事务。
 
-阿里GTS所提出的[AT 事务模式](https://seata.io/zh-cn/docs/overview/what-is-seata.html)就在一定成都上解决了这个问题。AT 模式是一种无侵入的分布式事务解决方案。在 AT 模式下，用户只需关注自己的业务 SQL，用户的业务 SQL作为一阶段，Seata 框架会自动生成事务的二阶段提交和回滚操作。
+阿里Seata所提出的[AT 事务模式](https://seata.io/zh-cn/docs/overview/what-is-seata.html)就在一定程度上解决了这个问题。AT 模式是一种无侵入的分布式事务解决方案。在 AT 模式下，用户只需关注自己的业务 SQL，用户的业务 SQL作为一阶段，Seata 框架会自动生成事务的二阶段提交和回滚操作。
 
 其最重要的思想是：基于数据补偿来代替回滚。这种思想在后文的SAGA模式中也会介绍。
 
