@@ -17,7 +17,7 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: pale night #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -635,10 +635,6 @@ subtitle:
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   source: 3
   sub:
-    - Row row row your boat 
-    - gently down the stream
-    - Merrily merrily merrily merrily
-    - life is but a dream
 
 # Loading Animation (加載動畫)
 preloader: false
