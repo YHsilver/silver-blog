@@ -6,7 +6,7 @@ categories:
 abbrlink: f5eee81d
 date: 2023-01-01 01:40:22
 description: 新栏目：年度总结
-cover: http://images.ashery.cn/img/image-20230105224941411.png
+cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 ---
 
 
@@ -66,7 +66,7 @@ cover: http://images.ashery.cn/img/image-20230105224941411.png
 >
 > 但是话说回来，这些都是社会大数据下对普通人阶段的**总结，而不是定义**。
 >
-> **所以你一直在改变，也一直没变。**
+> **所以或许你一直在改变，也一直没变。**
 
 ![image-20230105222627697](https://pic.imgdb.cn/item/63b6dedabe43e0d30e8bbc80.jpg)
 
@@ -88,7 +88,7 @@ cover: http://images.ashery.cn/img/image-20230105224941411.png
 >
 > 年初的第一笔消费也是交给了知识付费 = =！
 
-![a03d348bd920ab09daa3448ccf05e37a](http://images.ashery.cn/img/a03d348bd920ab09daa3448ccf05e37a.jpeg)
+![a03d348bd920ab09daa3448ccf05e37a](https://pic.imgdb.cn/item/63b6fed3be43e0d30ecc8f55.jpg)
 
 
 
