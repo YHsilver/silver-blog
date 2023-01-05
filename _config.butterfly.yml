@@ -165,7 +165,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
@@ -634,7 +634,9 @@ subtitle:
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   source: 3
-  sub:
+  sub:    
+    - C'est la vie
+    - Joie de vivre
 
 # Loading Animation (加載動畫)
 preloader: false
