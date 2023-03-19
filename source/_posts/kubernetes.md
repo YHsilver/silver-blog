@@ -128,7 +128,7 @@ Kubernetes支持的Volume类型有：
 
 应用程序启动时可能需要从外部读取一些配置参数，比如数据库用户名和密码，在Docker中可以通过docker-compose的.yaml文件实现。同样，在Kubernetes中，也提供了配置这些参数的方法。
 
-**ConfigMap**是Kubernetes提供的一种 API 对象，用来将**非机密性**的数据保存到键值对中。使用时， Podshttps://kubernetes.io/zh-cn/docs/concepts/workloads/pods/可以将其用作环境变量、命令行参数或者存储卷中的配置文件。ConfigMap 在设计上不是用来保存大量数据的。在 ConfigMap 中保存的数据不可超过 1 MiB。如果你需要保存超出此尺寸限制的数据，你可能希望考虑挂载存储卷 或者使用独立的数据库或者文件服务。
+**ConfigMap**是Kubernetes提供的一种 API 对象，用来将**非机密性**的数据保存到键值对中。使用时， [Pods](https://kubernetes.io/zh-cn/docs/concepts/workloads/pods/)可以将其用作环境变量、命令行参数或者存储卷中的配置文件。ConfigMap 在设计上不是用来保存大量数据的。在 ConfigMap 中保存的数据不可超过 1 MiB。如果你需要保存超出此尺寸限制的数据，你可能希望考虑挂载存储卷 或者使用独立的数据库或者文件服务。
 
 ConfigMap 并不提供保密或者加密功能，如果你想存储的数据是机密的，比如账号密码，可使用 **Secret**。
 
