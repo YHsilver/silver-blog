@@ -4,7 +4,7 @@ tags:
   - 数据库
   - Mysql
   - 事务
-cover: 'https://pic.imgdb.cn/item/6382506b16f2c2beb1a9fbaf.jpg'
+cover: 'http://images.ashery.cn/img/6382506b16f2c2beb1a9fbaf.jpg'
 abbrlink: 26567
 date: 2022-11-27 21:30:54
 ---
@@ -49,7 +49,7 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 
 1991 年，为了解决分布式事务的一致性问题，[X/Open](https://en.wikipedia.org/wiki/X/Open)组织提出了一套名为[X/Open XA](https://en.wikipedia.org/wiki/X/Open_XA)（XA 是 eXtended Architecture 的缩写）的处理事务架构，其核心内容是定义了全局的事务管理器（Transaction Manager，用于协调全局事务）和局部的资源管理器（Resource Manager，用于驱动本地事务）之间的通信接口。其中，每个资源管理器RM都具有独立性，且不必是同构的。全局事务的原子性由事务管理器来负责，各个模块的交互如下图所示。AP通过TM来声明一个全局事务，然后操作不同RM上的资源，最后通知TM来提交或者回滚全局事务。
 
-![XA](https://pic.imgdb.cn/item/63833ab016f2c2beb1cd73cd.jpg)
+![XA](http://images.ashery.cn/img/63833ab016f2c2beb1cd73cd.jpg)
 
 ### 2PC协议
 
@@ -59,7 +59,7 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 
 2PC将事务分成了准备和提交两个阶段，如图。
 
-<img src="https://pic.imgdb.cn/item/63833e7216f2c2beb1d22e08.png" alt="image-20221127183636545" style="zoom: 33%;"  />
+<img src="http://images.ashery.cn/img/63833e7216f2c2beb1d22e08.png" alt="image-20221127183636545" style="zoom: 33%;"  />
 
 准备阶段
 
@@ -90,7 +90,7 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 
 同样也是由于事务失败回滚概率变小的原因，在三段式提交中，如果在 PreCommit 阶段之后发生了协调者宕机，即参与者没有能等到 DoCommit 的消息的话，默认的操作策略将是提交事务而不是回滚事务或者持续等待，这就相当于避免了协调者单点问题的风险。三段式提交的操作时序如图所示。
 
-<img src="https://pic.imgdb.cn/item/638344bc16f2c2beb1dde26d.png" alt="image-20221127190326121" style="zoom:50%;" />
+<img src="http://images.ashery.cn/img/638344bc16f2c2beb1dde26d.png" alt="image-20221127190326121" style="zoom:50%;" />
 
 从以上过程可以看出，三段式提交对单点问题和回滚时的性能问题有所改善，但是它对一致性风险问题并未有任何改进，在这方面它面临的风险甚至反而是略有增加了的。譬如，进入 PreCommit 阶段之后，协调者发出的指令不是 Ack 而是 Abort，而此时因网络问题，有部分参与者直至超时都未能收到协调者的 Abort 指令的话，这些参与者将会错误地提交事务，这就产生了不同参与者之间数据不一致的问题。
 
@@ -102,25 +102,25 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 
 其最重要的思想是：基于数据补偿来代替回滚。这种思想在后文的SAGA模式中也会介绍。
 
-![image.png](https://pic.imgdb.cn/item/638348d616f2c2beb1e54545.png)
+![image.png](http://images.ashery.cn/img/638348d616f2c2beb1e54545.png)
 
 - 一阶段准备
 
   在一阶段，Seata 会拦截业务 SQL，首先解析 SQL 语义，找到业务 SQL要更新的业务数据，在业务数据被更新前，将其保存成`before image`，然后执行业务 SQL更新业务数据，在业务数据更新之后，再将其保存成`after image`，最后生成行锁。以上操作全部在一个数据库事务内完成，这样保证了一阶段操作的原子性。
 
-![图片3.png](https://pic.imgdb.cn/item/638348ff16f2c2beb1e57bfd.png)
+![图片3.png](http://images.ashery.cn/img/638348ff16f2c2beb1e57bfd.png)
 
 - 二阶段提交
 
   因为业务 SQL在一阶段已经提交至数据库， 所以 Seata 框架只需将一阶段保存的快照数据和行锁删掉，完成数据清理即可。
 
-![图片4.png](https://pic.imgdb.cn/item/6383491416f2c2beb1e58f77.png)
+![图片4.png](http://images.ashery.cn/img/6383491416f2c2beb1e58f77.png)
 
 - 二阶段回滚
 
   二阶段如果是回滚的话，Seata 就需要回滚一阶段已经执行的业务 SQL，还原业务数据。回滚方式便是用`before image`还原业务数据；但在还原前要首先要**校验脏写**，对比“数据库当前业务数据”和 “after image”，如果两份数据完全一致就说明没有脏写，可以还原业务数据，如果不一致就说明有脏写，出现脏写就需要转人工处理。
 
-![图片5.png](https://pic.imgdb.cn/item/6383491e16f2c2beb1e5998c.png)
+![图片5.png](http://images.ashery.cn/img/6383491e16f2c2beb1e5998c.png)
 
 从整体上看是 AT 事务是参照了 XA 两段提交协议实现的，但针对 XA 2PC 的缺陷，即在准备阶段必须等待所有数据源都返回成功后，协调者才能统一发出 Commit 命令而导致的木桶效应，设计了针对性的解决方案。
 
@@ -138,13 +138,13 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 
 此方案的核心是将需要分布式处理的任务通过可靠消息队列的方式来异步执行。消息日志可以存储到本地文本、数据库或消息队列，再通过业务规则自动或人工发起重试，一直到所有业务最终完成。适用于对一致性要求不高的场景，实现这个模型时需要注意重试的幂等。
 
-![img](https://pic.imgdb.cn/item/63834f5d16f2c2beb1ed2a39.png)
+![img](http://images.ashery.cn/img/63834f5d16f2c2beb1ed2a39.png)
 
 #### 事务消息
 
 在RocketMQ等消息队列中实现了[事务消息](https://rocketmq.apache.org/docs/featureBehavior/04transactionmessage)，实际上其实是对本地消息表的一个封装，将本地消息表移动到了MQ内部。
 
-![image-20190726114320498](https://pic.imgdb.cn/item/6383520d16f2c2beb1f273ba.jpg)
+![image-20190726114320498](http://images.ashery.cn/img/6383520d16f2c2beb1f273ba.jpg)
 
 ### TCC
 
@@ -156,7 +156,7 @@ CAP理论指的是在一个分布式系统中，一致性（Consistency）、可
 - **Confirm**：确认执行阶段，不进行任何业务检查，直接使用 Try 阶段准备的资源来完成业务处理。Confirm 阶段可能会重复执行，因此本阶段所执行的操作需要具备幂等性。
 - **Cancel**：取消执行阶段，释放 Try 阶段预留的业务资源。Cancel 阶段可能会重复执行，也需要满足幂等性。
 
-<img src="https://pic.imgdb.cn/item/6383531f16f2c2beb1f5f56a.png" alt="tcc" style="zoom:33%;" />
+<img src="http://images.ashery.cn/img/6383531f16f2c2beb1f5f56a.png" alt="tcc" style="zoom:33%;" />
 
 
 
@@ -185,7 +185,7 @@ SAGA 由两部分操作组成：
 - 正向恢复（Forward Recovery）：如果 T~i~事务提交失败，则一直对 T~i~进行重试，直至成功为止。
 - 反向恢复（Backward Recovery）：如果 T~i~事务提交失败，则一直执行 C~i~对 T~i~进行补偿，直至成功为止
 
-![Saga模式示意图](https://pic.imgdb.cn/item/6383570a16f2c2beb1fe1986.png)
+![Saga模式示意图](http://images.ashery.cn/img/6383570a16f2c2beb1fe1986.png)
 
 
 

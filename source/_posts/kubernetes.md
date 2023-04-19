@@ -23,7 +23,7 @@ categories:
 
 实际上不应该仅仅把Kubernetes当做容器编排系统来看待。实际上，有了Kubernetes之后，并不需要人为的编排。编排是指定一组工作流workflow，规定每个条件下触发什么操作。但是Kubernetes并不是这样的，**Kubernetes只需要我们提供一份理想状态下系统应该达到的状态**（`Spec`），Kubernetes会自动进行内部调整（可以看做是一系列内部的workflow），以不断维持系统理想状态。不仅便于用户使用，也使得系统更易于使用且功能更强大、 系统更健壮，更为弹性和可扩展。
 
-![container_evolution](https://pic.imgdb.cn/item/63e63c994757feff3390edde.jpg)
+![container_evolution](http://images.ashery.cn/img/63e63c994757feff3390edde.jpg)
 
 ## Kubernetes 提供的能力
 Kubernetes 提供的最主要的能力有

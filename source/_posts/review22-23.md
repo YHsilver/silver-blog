@@ -6,7 +6,7 @@ categories:
 abbrlink: f5eee81d
 date: 2023-01-01 01:40:22
 description: 新栏目：年度总结
-cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
+cover: http://images.ashery.cn/img/202304200040936.png
 ---
 
 
@@ -16,7 +16,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 
 > 下滑开启你的2022年度报告
 
-![start](https://pic.imgdb.cn/item/63b6d7febe43e0d30e7ca254.jpg)
+![start](http://images.ashery.cn/img/63b6d7febe43e0d30e7ca254.jpg)
 
 
 
@@ -28,7 +28,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 >
 > 上海疫情对很多人的生活造成了巨大影响，你每天都能通过被删除的朋友圈和微博看到一些人的故事，所幸对你的生活似乎没有造成太大的影响
 
-![](https://pic.imgdb.cn/item/63b6d892be43e0d30e7dfeac.jpg)
+![](http://images.ashery.cn/img/63b6d892be43e0d30e7dfeac.jpg)
 
 
 
@@ -38,7 +38,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 >
 > 虽然大家都知道本科毕业论文很水，但是通过两个月的深入学习和理解，你也不是一无所获，至少掌握了“取其精华，合成糟粕”的技能，并且成功通过答辩老师的灵魂拷问：“emmm，你这个东西，有什么用？”。
 
-![](https://pic.imgdb.cn/item/63b6d983be43e0d30e803f7b.jpg)
+![](http://images.ashery.cn/img/63b6d983be43e0d30e803f7b.jpg)
 
 
 
@@ -54,7 +54,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 >
 > 希望有一天你能探索西藏更多的区域
 
-![日照金山](https://pic.imgdb.cn/item/63b6d79bbe43e0d30e7bca27.jpg)
+![日照金山](http://images.ashery.cn/img/63b6d79bbe43e0d30e7bca27.jpg)
 
 
 
@@ -68,7 +68,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 >
 > **所以或许你一直在改变，也一直没变。**
 
-![image-20230105222627697](https://pic.imgdb.cn/item/63b6dedabe43e0d30e8bbc80.jpg)
+![image-20230105222627697](http://images.ashery.cn/img/63b6dedabe43e0d30e8bbc80.jpg)
 
 
 
@@ -88,7 +88,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 >
 > 年初的第一笔消费也是交给了知识付费 = =！
 
-![a03d348bd920ab09daa3448ccf05e37a](https://pic.imgdb.cn/item/63b6fed3be43e0d30ecc8f55.jpg)
+![a03d348bd920ab09daa3448ccf05e37a](http://images.ashery.cn/img/63b6fed3be43e0d30ecc8f55.jpg)
 
 
 
@@ -104,7 +104,7 @@ cover: https://pic.imgdb.cn/item/63b6ff18be43e0d30ecd58bb.png11.png
 >
 > 在周末和假期，需要强迫自己出去走走，毕竟还有很多地方没有去过呢
 
-![image-20230105221551338](https://pic.imgdb.cn/item/63b6dea8be43e0d30e8b544a.jpg)
+![image-20230105221551338](http://images.ashery.cn/img/63b6dea8be43e0d30e8b544a.jpg)
 
 
 

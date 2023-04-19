@@ -5,7 +5,7 @@ tags:
   - go
   - linux
 description: In this post, we are going to build a mini docker with minimum codes but full functions.
-cover: 'https://pic.imgdb.cn/item/639debd8b1fccdcd36fe1b3d.jpg'
+cover: 'http://images.ashery.cn/img/639debd8b1fccdcd36fe1b3d.jpg'
 abbrlink: 6cc923ae
 date: 2022-12-15 21:14:09
 categories:
@@ -517,7 +517,7 @@ From this post, we can feel that a container is a capsulate of a process's envir
 
 Last is the comparison of Docker and Virtual Machine. As we know, an operating system is is divided into two parts: Kernel and Application(Run Time Library). The most difference between the Docker and the Virtual Machine is the isolation level. The Virtual Machine Virtualized a totally new Guest Operating System without using the host's kernel, but the docker just virtualized a new application level engine and all containers shared the same host kernel.
 
-<img src="https://pic.imgdb.cn/item/639df1d7b1fccdcd3608a069.jpg" alt="docker-vs-container" style="zoom: 50%;" />
+<img src="http://images.ashery.cn/img/639df1d7b1fccdcd3608a069.jpg" alt="docker-vs-container" style="zoom: 50%;" />
 
 
 

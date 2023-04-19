@@ -3,7 +3,7 @@ title: Hello World
 date: 2022-09-27 22:30:54
 tags:
   - 随笔
-cover: 'https://pic.imgdb.cn/item/6318b29116f2c2beb15628f3.png'
+cover: 'https://images.ashery.cn/img/6318b29116f2c2beb15628f3.png'
 abbrlink: 16107
 ---
 > 终于又要捡起我的博客网站了，之前的博客写了一个多月就暂停没维护了，一方面是因为本身知识储备不够，还不足以写出一个高质量的程序员技术博客，二是操作起来有点麻烦，写作工具不够丰富，创业未半而中道崩殂也实属意料之中。这次重新拾起旧业，不仅丰富了写作内容，而且搭建了一套完整易用的工作流，应该能让这个网站存活得久一点...
@@ -101,5 +101,5 @@ Typora可以算是Markdown第一编辑器了，跨平台、轻量、功能强大
 1. 新建立一个Github仓库，用于存放源文件
 2. 配置GitHub Action，每次push提交文件时，使用Hexo编译源文件并部署到GitHub Pages对应的仓库
 
-![未命名绘图.drawio](https://pic.imgdb.cn/item/6319ca1716f2c2beb14f0cf7.png)
+![](https://images.ashery.cn/img/6319ca1716f2c2beb14f0cf7.png)
 

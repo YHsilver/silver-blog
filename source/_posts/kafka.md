@@ -7,7 +7,7 @@ abbrlink: 9a7d5a13
 date: 2022-11-29 19:13:42
 categories:
 description:
-cover: https://pic.imgdb.cn/item/638c91aa16f2c2beb1a86dc2.png
+cover: http://images.ashery.cn/img/638c91aa16f2c2beb1a86dc2.png
 ---
 
 
@@ -23,7 +23,7 @@ Kafka是一种分布式的，基于发布/订阅的消息系统。
 
 ## Kafka总体架构
 
-![img](https://pic.imgdb.cn/item/638c8eb216f2c2beb1a4d1c2.png)
+![img](http://images.ashery.cn/img/638c8eb216f2c2beb1a4d1c2.png)
 
 **关键概念 Key Concept**
 
@@ -55,7 +55,7 @@ Kafka通过Zookeeper管理集群配置，选举leader，以及在Consumer Group�
 
 ### 消息发送流程
 
-![img](https://pic.imgdb.cn/item/638c8ecb16f2c2beb1a4f188.png)
+![img](http://images.ashery.cn/img/638c8ecb16f2c2beb1a4f188.png)
 
 1.  producer发出消息，被拦截器拦截。拦截器可以实现用户在消息发送前、发送成功后、发送失败时定制自己的逻辑 
 2. producer发出消息，被拦截器拦截。拦截器可以实现用户在消息发送前、发送成功后、发送失败时定制自己的逻辑 
@@ -121,7 +121,7 @@ Producer发送消息时指定的 acks 参数指定了要有多少个分区副本
 
 ### Broker处理流程
 
-![img](https://pic.imgdb.cn/item/638c8ed316f2c2beb1a4fb85.png)
+![img](http://images.ashery.cn/img/638c8ed316f2c2beb1a4fb85.png)
 
 
 
@@ -136,21 +136,21 @@ Producer发送消息时指定的 acks 参数指定了要有多少个分区副本
 
 ### 文件结构
 
-![img](https://pic.imgdb.cn/item/638c8ede16f2c2beb1a50d99.png)
+![img](http://images.ashery.cn/img/638c8ede16f2c2beb1a50d99.png)
 
 
 
 #### 时间索引文件 .timeIndex  **<timestamp, offset>**
 
-![img](https://pic.imgdb.cn/item/638c8ee616f2c2beb1a51a5a.jpg)
+![img](http://images.ashery.cn/img/638c8ee616f2c2beb1a51a5a.jpg)
 
 #### 位置索引文件 .index <offset, position>
 
-![img](https://pic.imgdb.cn/item/638c8eed16f2c2beb1a52300.png)
+![img](http://images.ashery.cn/img/638c8eed16f2c2beb1a52300.png)
 
 #### 消息日志文件 .log
 
-![img](https://pic.imgdb.cn/item/638c8ef416f2c2beb1a52abe.jpg)
+![img](http://images.ashery.cn/img/638c8ef416f2c2beb1a52abe.jpg)
 
 
 
@@ -172,7 +172,7 @@ Leader负责跟踪所有的follower状态，如果follower“落后”太多或�
 
 -  **HW(high water):** 高水位，主从同步中的最小LEO值，消费者可读的范围 
 
-![img](https://pic.imgdb.cn/item/638c8efb16f2c2beb1a533b8.png)
+![img](http://images.ashery.cn/img/638c8efb16f2c2beb1a533b8.png)
 
 
 
@@ -206,13 +206,13 @@ Kafka 采取了一种稍微不同的方法来选择它的投票集。 Kafka 不�
 
 Kafka提供了一种机制来为单个 topic partition 的数据日志中的每个 message key 保留最新的已知值。
 
-![img](https://pic.imgdb.cn/item/638c8f0316f2c2beb1a53dbe.jpg)
+![img](http://images.ashery.cn/img/638c8f0316f2c2beb1a53dbe.jpg)
 
 ## Consumer
 
 ### 消费流程
 
-![img](https://pic.imgdb.cn/item/638c8f0916f2c2beb1a544d8.png)
+![img](http://images.ashery.cn/img/638c8f0916f2c2beb1a544d8.png)
 
 1.  consumer group的第一台consumer启动时就会选择消费者组协调器coordinator(根据consumerGroupId的哈希值确定) 
 2.  consumer向coordinator发出join group请求，coordinator指定第一个发出join group的consumer为leader consumer(这里假定为consumer0) 
@@ -326,7 +326,7 @@ Kafka中的事务特性主要用于以下两种场景：
 
 -  控制消息共有两种类型：commit 和 abort，分别用来表征事务已经成功提交或已经被成功终止； 
 
-![img](https://pic.imgdb.cn/item/638c8f1216f2c2beb1a54ffd.jpg)
+![img](http://images.ashery.cn/img/638c8f1216f2c2beb1a54ffd.jpg)
 
 A: producer发送事务状态消息到coordiantor，开始事务、record分区写入信息等
 
@@ -336,7 +336,7 @@ C: producer正常发送消息到broker集群
 
 D: coordinator写入事务消息状态信息
 
-![img](https://pic.imgdb.cn/item/638c8f1816f2c2beb1a557c2.jpg)
+![img](http://images.ashery.cn/img/638c8f1816f2c2beb1a557c2.jpg)
 
 1.  查找Transacrtion Coordinator：Producer向任意一个Broker发送 FindCoordinatorRequest请求来获取Transaction Coordinator的地址。 
 2.  事务初始化：Producer 通过 initTransactions API 将 transactional.id 注册到 transactional coordinator，此时 coordinator 会关闭所有有相同 transactional.id 且处于 pending 状态的事务，比如由于Producer崩溃宕机导致的上次事务未完成。 
@@ -370,7 +370,7 @@ Kafka使用**幂等生产者**和**事务机制**可以保证Exactly Once**（�
   - 类似地，Broker端也会为每个<PID, Topic, Partition>维护一个序号，并且每次Commit一条消息时将其对应序号递增。对于接收的每条消息，如果其序号比Broker维护的序号（即最后一次Commit的消息的序号）大一，则Broker会接受它，否则将其丢弃 
 
 
-![img](https://pic.imgdb.cn/item/638c8f1e16f2c2beb1a56037.jpg)
+![img](http://images.ashery.cn/img/638c8f1e16f2c2beb1a56037.jpg)
 
 上述幂等设计只能保证单个Producer对于同一个<Topic, Partition>的Exactly Once语义。
 
@@ -398,7 +398,7 @@ Kafka中存在大量的网络数据持久化到磁盘（Producer到Broker）和�
 
 Linux 2.4+内核通过`sendfile`系统调用，提供了零拷贝。数据通过DMA拷贝到内核态Buffer后，直接通过DMA拷贝到NIC Buffer，无需CPU拷贝。这也是零拷贝这一说法的来源。除了减少数据拷贝外，因为整个读文件-网络发送由一个`sendfile`调用完成，整个过程只有两次上下文切换，因此大大提高了性能。零拷贝过程如下图所示。
 
-![img](https://pic.imgdb.cn/item/638c8f2416f2c2beb1a568c0.png)
+![img](http://images.ashery.cn/img/638c8f2416f2c2beb1a568c0.png)
 
 
 
@@ -420,7 +420,7 @@ Source Connector从外部系统读取数据并将其发送到 Kafka Topic。
 
 Sink Connector 订阅一个或多个 Kafka Topic并将其读取的消息写入外部系统。
 
-![img](https://pic.imgdb.cn/item/638c8f2a16f2c2beb1a57054.png)
+![img](http://images.ashery.cn/img/638c8f2a16f2c2beb1a57054.png)
 
 
 
@@ -428,7 +428,7 @@ Sink Connector 订阅一个或多个 Kafka Topic并将其读取的消息写入�
 
 如果开源社区中没有提供当前系统的Connector时，开发者可以基于Kafka提供的API开发适合自己系统的Connector。
 
-![img](https://pic.imgdb.cn/item/638c8f2f16f2c2beb1a576c9.jpg)
+![img](http://images.ashery.cn/img/638c8f2f16f2c2beb1a576c9.jpg)
 
 -  **Connector：**通过管理任务来协调数据流的高级抽象，需要实现的最主要方法是`taskConfig(...)`，用于定义Task如何扩展以及Task的配置信息，会通过Worker线程传递给Task。 
 
@@ -454,7 +454,7 @@ Sink Connector 订阅一个或多个 Kafka Topic并将其读取的消息写入�
 
 Schema Registry 是一个独立的服务器进程，运行在 Kafka 代理之外的机器上。它的工作是维护一个包含已写入其负责的集群中主题的所有模式的数据库。该“数据库”保存在**内部 Kafka 主题**中，并缓存在 Schema Registry 中以实现低延迟访问。Schema Registry 可以在冗余的高可用性配置中运行，因此如果一个实例发生故障，它仍然可以运行。
 
-![img](https://pic.imgdb.cn/item/638c8f3416f2c2beb1a57cbf.jpg)
+![img](http://images.ashery.cn/img/638c8f3416f2c2beb1a57cbf.jpg)
 
  
 
@@ -468,7 +468,7 @@ Kafka Stream是Apache Kafka从0.10版本引入的一个新Feature，一套Kafka 
 
 一般流式计算会与批量计算相比较。在流式计算模型中，输入是持续的，可以认为在时间上是无界的，也就意味着，永远拿不到全量数据去做计算。同时，计算结果是持续输出的，也即计算结果在时间上也是无界的。流式计算一般对实时性要求较高，同时一般是先定义目标计算，然后数据到来之后将计算逻辑应用于数据。同时为了提高计算效率，往往尽可能采用增量计算代替全量计算。
 
-![img](https://pic.imgdb.cn/item/638c8f3a16f2c2beb1a583a9.png)![img](https://pic.imgdb.cn/item/638c8f4216f2c2beb1a58c81.png)
+![img](http://images.ashery.cn/img/638c8f3a16f2c2beb1a583a9.png)![img](http://images.ashery.cn/img/638c8f4216f2c2beb1a58c81.png)
 
 ### 为什么需要Kafka Stream
 
@@ -490,7 +490,7 @@ Kafka Stream是Apache Kafka从0.10版本引入的一个新Feature，一套Kafka 
 
 ### Kafka Stream 整体架构
 
-![img](https://pic.imgdb.cn/item/638c8f4816f2c2beb1a5945c.png)
+![img](http://images.ashery.cn/img/638c8f4816f2c2beb1a5945c.png)
 
 
 
@@ -514,7 +514,7 @@ Kafka Stream的模型中，最小粒度为Task，而每个Task包含一个特定
 
 -  KTable代表一个完整的数据集，可以理解为数据库中的表。 
 
-![img](https://pic.imgdb.cn/item/638c8f4d16f2c2beb1a59a89.png)
+![img](http://images.ashery.cn/img/638c8f4d16f2c2beb1a59a89.png)
 
 
 
@@ -548,7 +548,7 @@ Kafka Stream的模型中，最小粒度为Task，而每个Task包含一个特定
 
 KSQL 是 Apache Kafka 的数据流 SQL 引擎，它使用 SQL 语句替代编写大量代码去实现流处理任务。
 
-![img](https://pic.imgdb.cn/item/638c8f5316f2c2beb1a5a2f2.jpg)
+![img](http://images.ashery.cn/img/638c8f5316f2c2beb1a5a2f2.jpg)
 
 
 

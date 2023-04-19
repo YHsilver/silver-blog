@@ -4,7 +4,7 @@ tags:
   - 数据库
   - MySQL
   - 事务
-cover: 'https://pic.imgdb.cn/item/6378dcc116f2c2beb17e3666.jpg'
+cover: 'https://images.ashery.cn/img/6378dcc116f2c2beb17e3666.jpg'
 abbrlink: 42434
 date: 2022-11-19 22:30:54
 ---
@@ -45,7 +45,7 @@ MySQL通过`undo log`实现原子性。
 
 下图undo log 的通用格式，一般insert和update/delete的undo log日志格式有所不同。
 
-![未命名文件](https://pic.imgdb.cn/item/6377b78016f2c2beb1da25a3.png)
+![未命名文件](https://images.ashery.cn/img/6377b78016f2c2beb1da25a3.png)
 
 ## 实现持久性
 
@@ -59,11 +59,11 @@ MySQL通过`redo log`实现持久性。
 
 绝大部分类型的`redo`日志都有下面这种通用的结构，当然实际的结构肯定更复杂多样
 
-![img](https://pic.imgdb.cn/item/6377b31816f2c2beb1d2cb83.png)
+![img](http://images.ashery.cn/img/6377b31816f2c2beb1d2cb83.png)
 
 （附一张MySQL的写入流程图，可以更好的理解undo log 和 redo log）
 
-![image](https://pic.imgdb.cn/item/6377a9b416f2c2beb19e4fb6.jpg)
+![image](http://images.ashery.cn/img/6377a9b416f2c2beb19e4fb6.jpg)
 
 ## **实现隔离性**
 

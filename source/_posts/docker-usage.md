@@ -4,7 +4,7 @@ tags:
   - docker
 description: >-
   在上一篇文章中，我们实现了一个简单的Container，在资源可见性与可用性上与宿主机隔离。在这篇文章中，我们将学习最流行的容器技术：Docker的基本使用。
-cover: 'https://pic.imgdb.cn/item/63aec3ee08b683016379e600.jpg'
+cover: 'http://images.ashery.cn/img/63aec3ee08b683016379e600.jpg'
 abbrlink: 394c83b4
 date: 2022-12-28 14:20:12
 categories:
@@ -22,7 +22,7 @@ Docker的基本原理和我们的mini-docker没有什么区别，但是为了其
 
 首先我们先来了解一下docker的组成部分
 
-![](https://pic.imgdb.cn/item/63aec2fe08b683016378e2ce.jpg)
+![](http://images.ashery.cn/img/63aec2fe08b683016378e2ce.jpg)
 
 Docker主要分为了三个部分：
 
