@@ -81,17 +81,17 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://pic.imgdb.cn/item/6317152f16f2c2beb1c1760a.jpg
+  img: http://images.ashery.cn/img/202304202309024.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://pic.imgdb.cn/item/631714d116f2c2beb1c10cfc.jpg
+index_img: http://images.ashery.cn/img/202304202309236.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://pic.imgdb.cn/item/63171f4616f2c2beb1cddb6c.jpg
+default_top_img: http://images.ashery.cn/img/202304202310628.png
 
 # The banner image of archive page
 archive_img:

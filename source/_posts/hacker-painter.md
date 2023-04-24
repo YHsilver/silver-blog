@@ -1,7 +1,7 @@
 ---
 title: hacker & painter
-tags: 随笔
-description: 《黑客与画家》读后总结与思考
+tags: 读书笔记
+description: 《黑客与画家》读书笔记
 cover: 'http://images.ashery.cn/img/61MSZsYP-NL.jpg'
 abbrlink: 80b7b4ba
 date: 2023-03-12 15:06:45

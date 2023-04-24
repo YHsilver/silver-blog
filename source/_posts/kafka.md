@@ -178,9 +178,9 @@ Leader负责跟踪所有的follower状态，如果follower“落后”太多或�
 
 **更新机制**：
 
-- Follower向leader同步数据时会返回自己的HW，leader会记录这些follower的HW并更新自己的HW为这些HW的最小值。![img](https://cdn.nlark.com/yuque/__latex/4a97c8b6f18a219259704210150a3800.svg)
+- Follower向leader同步数据时会返回自己的HW，leader会记录这些follower的HW并更新自己的HW为这些HW的最小值。![img](http://images.ashery.cn/img/4a97c8b6f18a219259704210150a3800.svg)
 
-- 同时Follower会对比leader的HW和自身的LEO值，取小作为follwer的HW值。![img](https://cdn.nlark.com/yuque/__latex/f1d247f2f1cd558f4eac97fa2db8147a.svg)
+- 同时Follower会对比leader的HW和自身的LEO值，取小作为follwer的HW值。![img](http://images.ashery.cn/img/f1d247f2f1cd558f4eac97fa2db8147a.svg)
 
 
 
