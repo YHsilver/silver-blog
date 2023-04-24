@@ -88,10 +88,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: http://images.ashery.cn/img/202304202309236.png
+index_img: http://images.ashery.cn/img/202304202309236.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: http://images.ashery.cn/img/202304202310628.png
+default_top_img: http://images.ashery.cn/img/202304202310628.jpg
 
 # The banner image of archive page
 archive_img:
